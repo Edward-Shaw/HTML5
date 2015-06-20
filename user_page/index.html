@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" media="screen" href="css/style.css">
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+					height: 799px;
+			width: 1600px;
+	<![endif]-->
+
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body {
+			background-image: url(img/background.png);
+			background-position:center;
+			background-size:100% 100%;
+    		background-repeat:no-repeat;
+		}
+
+		#glasspane{
+			text-align: center;
+			vertical-align: middle;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+
+		#glasspane a{
+			color:#fff;
+			text-decoration:underline;
+			margin-top: 10px;
+		}
+
+		#glasspane p{
+			color:#fff;
+			margin-top: -10px;
+		}
+	</style>
+</head>
+
+<script>
+$(function(){
+	$("#inputEmail").click(function(){
+		$("#labelForEmail").show(1000);
+	});
+	$("#inputPassword").click(function(){
+		$("#labelForPassword").show(1000);
+	});
+});
+</script>
+
+<body>
+	<div id="glasspane">
+        <form class="form-search" style="margin-top:370px;">
+	        <label id="labelForEmail" for="inputEmail" class="sr-only" style="display:none; color:#fff; font-size:17px;">Email address</label>
+	        <input type="email" id="inputEmail" class="input-medium search-query" value="Email address" required autofocus style="margin-bottom:10px; width:220px; height: 30px; background-color:transparent;color:#fff;" onclick="if(value==defaultValue){value='';this.style.color='#000'}"><br>
+	        <label id="labelForPassword" for="inputPassword" class="input-label sr-only" style="display:none;color:#fff;font-size:17px;">Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+	        <input type="password" id="inputPassword" class="form-control search-query" value="Password" required style="margin-bottom:10px; width:220px; height: 30px; background-color:transparent; color:#fff;" onclick="if(value==defaultValue){value='';this.style.color='#000'}"><br>
+	        <input type="submit" id="inputPassword" class="form-control search-query" value="登录" required style="margin-bottom:10px; width:220px; height: 30px; text-align:center; color:#005D74; background-color:#fff; border:0;">
+      	</form>
+      	<a href="#">没有账号，点此注册</a>
+      	<div style="width:10%; height:1px; margin-left:35.5%; margin-top:50px;background-color:#D5D5D5;overflow:hidden;"></div>
+      	<p>或通过以下方式注册登录</p>
+      	<div style="width:10%;height:1px;margin-left:54.5%; margin-top:-20px; background-color:#D5D5D5;overflow:hidden;"></div>
+      	<img style="margin-top: 20px; margin-left: 0px;" src="img/douban.png">
+      	<img style="margin-top: 20px; margin-left: 20px;" src="img/QQ.png">
+      	<img style="margin-top: 20px; margin-left: 20px;" src="img/weibo.png">
+      	<img style="margin-top: 20px; margin-left: 20px;" src="img/tengxun.png">
+ 	</div>
+	<div class="container" style="width: 100%; height: 100%">
+		<div id="particles-js"></div>
+	</div>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
